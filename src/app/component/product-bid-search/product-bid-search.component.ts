@@ -83,8 +83,8 @@ export class ProductBidSearchComponent implements OnInit,OnDestroy {
     this.getAllProductofSellerSubscription.unsubscribe();
     const sellerEmail= this.userService.userName;
     this.getAllProductofSellerSubscription=this.productService.getAllProductBySeller(sellerEmail).pipe(finalize(()=>{}))
-    .subscribe((data : ProductDetail[])=>{
-      this.productDetailArray=[...data];  
+    .subscribe((data : any)=>{
+      this.productDetailArray=[...data.result];  
     },
     (error: any)=>{
         this.setError(error);
@@ -132,7 +132,7 @@ export class ProductBidSearchComponent implements OnInit,OnDestroy {
    this.isLoading=false;
   }))
   .subscribe((data : any)=>{
-    this.productBidDetailList =[...data]; 
+    this.productBidDetailList =[...data.result]; 
     this.hasData=this.productBidDetailList.length>0;  
   },
   (error: any)=>{
