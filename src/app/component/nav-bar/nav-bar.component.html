@@ -1,0 +1,10 @@
+<p>
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="onToggleDrawerClick()" >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>E-Auction</span>
+      <span class="nav-spacer"></span>
+      <span *ngIf="isAuthenticateUser" class="nav-span-right">Wellcome {{userName}}</span>
+    </mat-toolbar>
+  </p>

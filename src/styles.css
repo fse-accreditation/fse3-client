@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.height50{
+    height: 50px !important;
+}
+.width100percent{
+    width: 100% !important;
+}
+.width100percent{
+    width: 100% !important;
+}
+.width10percent{
+    width: 10% !important;
+}
+.left-margin{
+    margin-left: 20px;
+}
+.padding10-top{
+    padding-top: 10px;
+}
+.app-title-left .mat-grid-tile-content{
+    justify-content: left;
+   /* padding-left: 16px; */
+    align-items: center;
+}
+
+.app-title-center .mat-grid-tile-content{
+    justify-content: center;
+   /* padding-left: 16px; */
+    align-items: center;
+}
+.form-container90percent{
+    width: 90% !important;
+}
+
+.app-title-right .mat-grid-tile-content{
+    justify-content: flex-end;
+   /* padding-left: 16px; */
+    align-items: center;
+}
+
+.mat-form-field-wrapper .mat-form-field-flex{
+    padding: 0.75em .75em 0 1em !important;
+}
+
+.mat-snack-bar-container{
+    background:#673ab7
+}
+
+.mat-simple-snackbar .mat-button-wrapper{
+    color: white;
+}
+.simple-snack-bar{
+opacity: 0 !important;
+}

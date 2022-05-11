@@ -1,0 +1,8 @@
+{
+    "/api/*": {
+      "target": "http://gateway-service/",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true
+    }
+  } 

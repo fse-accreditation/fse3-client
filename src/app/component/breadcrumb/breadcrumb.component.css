@@ -1,0 +1,14 @@
+.app-breadcrumb{
+    display: flex;
+    border-radius: 0;
+}
+.app-breacrumb-header{
+    align-items:center;
+}
+.app-breacrumb-header .app-breadcrumb-title{
+    margin-bottom: 0px;
+    /*color: #673ab7;*/
+}
+.mat-card{
+    padding: 10px 24px;
+}

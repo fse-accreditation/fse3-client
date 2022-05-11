@@ -1,0 +1,13 @@
+button{
+    border: none;
+    width: 100%;
+    display: flex;
+}
+.menu-right{
+    margin-left: 10px;
+}
+.active{
+    background-color: #673ab7;
+    color: white;
+}
+

@@ -1,0 +1,57 @@
+.example-action-buttons {
+  padding-bottom: 20px;
+}
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.app-title-left{
+  width: 150px;
+}
+
+table {
+  width: 100%;
+}
+
+.center-grid{
+  display: flex;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.no-data span{
+  font-weight: 800;
+}
+
+.error-text{
+  font-weight: 800;
+  color: red;
+}
+
+
+.mat-header-cell {
+  text-align: center !important;
+}
+
+.mat-cell {
+  text-align: center;
+  justify-content:center;
+}
+
+.mat-expansion-panel-header-title{
+  font-size: 18px !important;
+}
+
+
+
+
+
+
