@@ -4,7 +4,9 @@
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
     "types": [
-      "jasmine"
+      "jasmine",
+      "jasminewd2",
+      "node"
     ]
   },
   "files": [
@@ -12,7 +14,7 @@
     "src/polyfills.ts"
   ],
   "include": [
-    "src/**/*.spec.ts",
-    "src/**/*.d.ts"
+    "..test/*.spec.ts",
+    "**/*.d.ts"
   ]
 }

@@ -13,29 +13,10 @@
           </div>
           
     </mat-grid-tile>
-   <!-- <mat-grid-tile class="app-title-left" [colspan]="3" >
-      <div class="form-container90percent">
-      <mat-form-field appearance="fill" class="width100percent">
-        <mat-label>Start Date</mat-label>
-        <input matInput [matDatepicker]="startdatepicker" [formControl]="startDate">
-        <mat-datepicker-toggle matSuffix [for]="startdatepicker"></mat-datepicker-toggle>
-        <mat-datepicker #startdatepicker></mat-datepicker>
-      </mat-form-field>
-    </div>
-    </mat-grid-tile>
-    <mat-grid-tile class="app-title-left" [colspan]="3">
-      <div class="form-container90percent">
-      <mat-form-field appearance="fill" class="width100percent"> 
-        <mat-label>End Date</mat-label>
-        <input matInput [matDatepicker]="enddatepicker" [formControl]="endDate">
-        <mat-datepicker-toggle matSuffix [for]="enddatepicker"></mat-datepicker-toggle>
-        <mat-datepicker #enddatepicker></mat-datepicker>
-      </mat-form-field>
-      </div>
-    </mat-grid-tile> -->
+   
     <mat-grid-tile class="app-title-right" [colspan]="1">
         <div >
-          <button mat-raised-button color="primary" (click)="onSearchClick($event)" >Search</button>
+          <button mat-raised-button color="primary" (click)="onSearchClick($event)" >Get</button>
         </div>
         </mat-grid-tile>
       </mat-grid-list>
@@ -69,10 +50,10 @@
           <input matInput [readonly]="true">
         </mat-form-field>
       </mat-grid-tile>
-      <mat-grid-tile class="app-title-left" [colspan]="1">Detail Description</mat-grid-tile>
+      <mat-grid-tile class="app-title-left" [colspan]="1">Detailed Description</mat-grid-tile>
       <mat-grid-tile [colspan]="3">
         <mat-form-field appearance="fill" class="height50 width100percent">
-          <mat-label>{{productDetail?.detailDescription}}</mat-label>
+          <mat-label>{{productDetail?.detailedDescription}}</mat-label>
           <input matInput [readonly]="true">
         </mat-form-field>
       </mat-grid-tile>
@@ -106,7 +87,7 @@
   (closed)="productBidOpenState = false">
   <mat-expansion-panel-header>
     <mat-panel-title>
-      Product Bid Detail
+      Bids
     </mat-panel-title>
   </mat-expansion-panel-header>
    <div *ngIf="isLoading" class="center-grid"><mat-spinner [diameter]="50"></mat-spinner></div>
@@ -114,20 +95,21 @@
    <div *ngIf="!isLoading && hasError" class="center-grid"><mat-icon class="error-text">error</mat-icon><span class="error-text">error occured !!</span></div>
   <div *ngIf="hasData && !isLoading && !hasError" class="padding10-top">
     <table mat-table [dataSource]="productBidDetailList" class="mat-elevation-z8">
-    <ng-container matColumnDef="productName">
-      <th mat-header-cell *matHeaderCellDef> Product Name </th>
-      <td mat-cell *matCellDef="let element"> {{element.product.productName}} </td>
-    </ng-container>
+    
     <ng-container matColumnDef="bidAmount">
       <th mat-header-cell *matHeaderCellDef> Bid Amount </th>
       <td mat-cell *matCellDef="let element"> {{element.bidAmount}} </td>
+    </ng-container>
+    <ng-container matColumnDef="productName">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.product.productName}} </td>
     </ng-container>
     <ng-container matColumnDef="email">
       <th mat-header-cell *matHeaderCellDef> Email </th>
       <td mat-cell *matCellDef="let element"> {{element.userDetail.email}} </td>
     </ng-container>
     <ng-container matColumnDef="phone">
-      <th mat-header-cell *matHeaderCellDef> Phone </th>
+      <th mat-header-cell *matHeaderCellDef> Mobile </th>
       <td mat-cell *matCellDef="let element"> {{element.userDetail.phone}} </td>
     </ng-container>
     <tr mat-header-row *matHeaderRowDef="productBidColumns"></tr>

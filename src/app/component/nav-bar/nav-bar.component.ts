@@ -2,6 +2,7 @@ import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 import {EventBroadcastService} from '../../service/share/event-broadcast.service';
 import {UserService} from '../../service/user.service';
 import {EventType} from '../../entity/eventType';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
@@ -12,7 +13,8 @@ export class NavBarComponent implements OnInit {
 userName:string;
 isAuthenticateUser:boolean=false;
   constructor(private eventBroadcastService:EventBroadcastService,
-    private userservice:UserService
+    private userservice:UserService,
+    private router:Router
     ) { }
 
   ngOnInit(): void {
@@ -39,5 +41,9 @@ isAuthenticateUser:boolean=false;
     this.userName=this.userservice.userName;
 
   }
-
+  signOut(signOut:any){
+    this.userservice.SignOut();
+    this.router.navigate(['/product-bid/search']);
+    location.reload();
+  }
 }

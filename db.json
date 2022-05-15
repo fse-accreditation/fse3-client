@@ -1,0 +1,46 @@
+{
+    "products": [
+        {
+            "id": "6280b4bc98302bba2a7a8c03",
+            "productId": "P009",
+            "productName": "P009fgh",
+            "shortDescription": "vjkdfhkjvgjdflkgvjkldf",
+            "detailedDescription": "fjkdngvjkdfnkngfkl",
+            "category": "Ornament",
+            "startingPrice": 90.89,
+            "bidEndDate": "2022-05-30T15:54:56.704Z",
+            "userDetail": {
+                "email": "bruno@email.com",
+                "firstName": "bruno",
+                "lastName": "bruno",
+                "address": "xyz street",
+                "city": "kolkata",
+                "state": "wb",
+                "pin": "711100",
+                "phone": "9876543450",
+                "userType": "Seller"
+            }
+        },
+        {
+            "id": "6280b51398302bba2a7a8c04",
+            "productId": "P0067",
+            "productName": "P009fgh67",
+            "shortDescription": "vjkdfhkjvgjdflkgvjkldf",
+            "detailedDescription": "fjkdngvjkdfnkngfkl",
+            "category": "Ornament",
+            "startingPrice": 90.89,
+            "bidEndDate": "2022-05-30T15:54:56.704Z",
+            "userDetail": {
+                "email": "bruno@email.com",
+                "firstName": "bruno",
+                "lastName": "bruno",
+                "address": "xyz street",
+                "city": "kolkata",
+                "state": "wb",
+                "pin": "711100",
+                "phone": "9876543450",
+                "userType": "Seller"
+            }
+        }
+    ]
+}

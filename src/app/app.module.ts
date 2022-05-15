@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarComponent } from './component/nav-bar/nav-bar.component';
 import { MainContentComponent } from './component/main-content/main-content.component';
-import { MenuDrawerComponent } from './component/menu-drawer/menu-drawer.component';
 import { LoginDialogComponent } from './component/login-dialog/login-dialog.component';
 import { ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -22,7 +21,6 @@ import { TokenInterceptor } from './service/share/token.interceptor'
     AppComponent,
     NavBarComponent,
     MainContentComponent,
-    MenuDrawerComponent,
     LoginDialogComponent,
     ProductBidSearchComponent,
     DashboardComponent,

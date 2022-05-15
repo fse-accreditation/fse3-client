@@ -11,7 +11,7 @@ import {ProductDetail} from '../entity/product-detail'
 export class ProductService {
   private getAllProductBySellerUrl:string;
   constructor(private httpClient : HttpClient ,private configService : ConfigService) { 
-    this.getAllProductBySellerUrl='/e-auction/api/v1/seller/get-allproduct';
+    this.getAllProductBySellerUrl='/e-auction/api/v1/Product';
   }
 
 

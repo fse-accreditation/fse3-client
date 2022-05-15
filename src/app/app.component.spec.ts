@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'estock-market'`, () => {
+  it(`should have as title 'eauction'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('estock-market');
+    expect(app.title).toEqual('eauction');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('estock-market app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('eauction app is running!');
   });
 });

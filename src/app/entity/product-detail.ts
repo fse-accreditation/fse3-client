@@ -3,7 +3,7 @@ export class ProductDetail {
     productId: string;
     productName: string;
     shortDescription: string;
-    detailDescription: string;
+    detailedDescription: string;
     startingPrice: number;
     bidEndDate: Date;
     sellerEmail: string;

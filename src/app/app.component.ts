@@ -9,7 +9,7 @@ import {UserService} from './service/user.service'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements AfterViewInit {
-  title = 'estock-market';
+  title = 'eauction';
   @ViewChild('drawer') drawer : any;
   showFiller= false;
   isAuthenticate=false;

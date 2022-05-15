@@ -1,10 +1,14 @@
 <p>
-    <mat-toolbar color="primary">
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="onToggleDrawerClick()" >
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span>E-Auction</span>
-      <span class="nav-spacer"></span>
-      <span *ngIf="isAuthenticateUser" class="nav-span-right">Wellcome {{userName}}</span>
-    </mat-toolbar>
-  </p>
+  <mat-toolbar color="accent">
+    <span>E-Auction</span>
+    <span class="nav-spacer"></span>
+    <span>Fetch Product Details</span>
+    <span class="nav-spacer"></span>
+    <span *ngIf="isAuthenticateUser" class="nav-span-right">Hey {{userName}}</span>
+    <button *ngIf="isAuthenticateUser" mat-stroked-button color="primary" routerLink="/logout" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+      true}" (click)="signOut($event)" >
+      <mat-icon>logout</mat-icon>
+      <span class="menu-right">Log Out</span>
+    </button>
+  </mat-toolbar>
+</p>
